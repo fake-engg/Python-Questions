@@ -1,0 +1,10 @@
+# taking input from the user which are comma-separated
+a,b,c = [eval(x) for x in input("Enter 3 numbers:").split(',')]      
+
+# logic for greatest among 3 numbers
+if a>b and a>c:
+    print("{} is greater than {} and {}".format(a,b,c))    # using {} replacement operator
+elif b>c:
+    print("{} is greater than {} and {}".format(b,a,c))
+else:
+    print("{} is greater than {} and {}".format(b,a,c))
