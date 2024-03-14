@@ -1,0 +1,7 @@
+s= input("Enter the string:")
+index=0
+for x in s:
+    print("Index is {} and character is {}".format(index,x))
+    index+=1
+
+    
