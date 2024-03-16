@@ -1,0 +1,60 @@
+*********Star Pattern*********
+
+n= int(input("Enter the number of lines:"))
+i,j=1,1
+while i<=n: 4
+    while j<=i:
+        print("*", end='')
+        j+=1
+    print()
+    i+=1
+
+"""
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print("*", end='')
+    print()
+    
+    """
+
+********* QUESTION - 2 ********** 
+
+* * * *
+* * * *
+* * * *
+* * * *
+
+n = int(input("Enter the rows:"))
+for i in range(1,n+1):
+    j=0
+    while j!=n:
+        print("*", end='')
+        j+=1
+    print()
+
+
+# USING REPEATATION OPERATOR
+
+n = int(input("Enter the rows:"))
+for i in range(1,n+1):
+    print("* "*n)            # using repeatation operator
+
+
+
+PRINT THIS PATTERN
+------------------
+
+* * * * *
+* * * *
+* * *
+* *
+*
+
+
+n = int(input("Enter rows:"))
+for i in range(1,n+1):
+    for j in range(n+1,i,-1):
+        print("* ",end = '')
+    print()
+
+
