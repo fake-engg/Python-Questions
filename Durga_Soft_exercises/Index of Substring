@@ -1,0 +1,14 @@
+s1 = input("Enter main string: ")
+s2 = input("Enter substring: ")
+n=len(s1)
+pos = -1
+flag = False
+
+while True:
+    pos = s1.find(s2,pos+1,n)
+    if pos == -1:
+        break
+    print("Substring is present at {}".format(pos))
+    flag = True
+if flag == False:
+    print("Aaaayyyeiiinnnnn!!!")
