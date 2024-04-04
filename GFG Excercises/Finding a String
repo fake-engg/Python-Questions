@@ -1,0 +1,24 @@
+Sample Input:
+ABCDCDC
+CDC
+
+Output:
+2
+========================================
+def count_substring(string, sub_string):
+    flag = 0
+    n = len(sub_string)
+    for i in range(len(string)-(n-1)):
+        if sub_string == string[i:i+n]:
+            flag+=1
+        else:
+            continue
+            
+    return flag
+
+if __name__ == '__main__':
+    string = input().strip()
+    sub_string = input().strip()
+    
+    count = count_substring(string, sub_string)
+    print(count)
