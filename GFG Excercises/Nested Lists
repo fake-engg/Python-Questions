@@ -1,0 +1,18 @@
+student = {}
+for c in range(int(input())):
+  name = input()
+  score = float(input())
+  student_name[name] = score
+marks = []
+for x in student.values():
+  marks.append(x)
+getNames = sorted(marks)
+for i in range(len(getNames)-1):
+  if getName[i] != getName[i+1]:
+    second_low = getName[i+1]
+    break
+  else:
+    continue
+for k,v in sorted(student.items()):
+  if v == second_low:
+    print(k)
